@@ -4,11 +4,32 @@
 
 | **Key**                                                               | Value                                                                                                                                                                              |
 |---------------|---------------------------------------------------------|
-| **Group Name**                                                               | ? |
+| **Group Name** C13                                                              | ? |
 | **Semester Duration**                                                 | 19<sup>th</sup> August - 25<sup>th</sup> November 2024                                                                                                                       |
 
 ## Flowchart
+![alt text](<WhatsApp Image 2024-09-17 at 11.49.53_a6afe673.jpg>)
 
 ## Pseudocode
+START
+
+SET TRANSACTION ISOLATION LEVEL
+
+SELECT DATABASE
+
+START TRANSACTION
+
+GET OrderNumber
+
+INSERT INTO Orders (OrderNumber)
+INSERT INTO OrderItems (OrderId, ProductId, Quantity)
+
+UPDATE Products SET Quantity = Quantity - QuantitySold WHERE ProductId = ProductId
+
+SAVEPOINT beforeProduct
+
+RECEIVE Payment
+
+COMMIT
 
 ## Support for the Sales Departments' Report

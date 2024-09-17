@@ -33,3 +33,4 @@ RECEIVE Payment
 COMMIT
 
 ## Support for the Sales Departments' Report
+They can calculate the unpaid balance. Using a a simple query we can subtract the amount that has already been paid from the total amount that should be paid therefore showing what specific amount is still unpaid for each individual order.
